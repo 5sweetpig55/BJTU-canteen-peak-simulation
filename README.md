@@ -1,6 +1,6 @@
 # projects
 
-这是一个基于 Express + Vite + TypeScript + Tailwind CSS 的全栈 Web 应用项目，由扣子编程 CLI 创建。
+这是一个基于 Express + Vite + TypeScript + Tailwind CSS 的全栈 Web 应用项目，是北京交通大学软件实训项目。
 
 **核心特性：**
 - 🚀 前端：Vite + TypeScript + Tailwind CSS
@@ -13,7 +13,7 @@
 ### 启动开发服务器
 
 ```bash
-coze dev
+dev
 ```
 
 启动后，在浏览器中打开 [http://localhost:5000](http://localhost:5000) 查看应用。
@@ -23,7 +23,7 @@ coze dev
 ### 构建生产版本
 
 ```bash
-coze build
+build
 ```
 
 构建产物位于 `dist/` 目录，可直接部署到静态托管服务。
@@ -31,7 +31,7 @@ coze build
 ### 预览生产版本
 
 ```bash
-coze start
+start
 ```
 
 在本地启动一个静态服务器，预览生产构建的效果。
@@ -386,7 +386,7 @@ console.log(apiUrl); // https://api.example.com
 2. **使用 TypeScript** 进行类型安全开发，避免使用 `any`
 3. **使用 Tailwind CSS** 进行样式开发，支持响应式和暗色模式
 4. **环境变量必须以 `VITE_` 开头** 才能在客户端代码中访问
-5. **开发时使用 `coze dev`**，支持热更新和快速刷新
+5. **开发时使用 `dev`**，支持热更新和快速刷新
 6. **API 路由以 `/api` 开头**，避免与前端路由冲突
 7. **单进程架构**：开发和生产环境都是前后端在同一进程中运行
 
@@ -412,7 +412,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 **Q: 如何部署？**
 
-1. 运行 `coze build` 构建前后端
+1. 运行 `build` 构建前后端
 2. 将整个项目上传到服务器
 3. 运行 `pnpm install --prod`
-4. 运行 `coze start` 启动服务
+4. 运行 `start` 启动服务
